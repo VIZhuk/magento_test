@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Webinse_StoreRestriction>
+            <version>0.1.0</version>
+        </Webinse_StoreRestriction>
+    </modules>
+    <global>
+        <models>
+
+        </models>
+        <helpers>
+
+        </helpers>
+    </global>
+</config>

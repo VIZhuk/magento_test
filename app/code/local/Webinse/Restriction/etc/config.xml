@@ -1,16 +1,41 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <config>
     <modules>
-        <Webinse_StoreRestriction>
+        <Webinse_Restriction>
             <version>0.1.0</version>
-        </Webinse_StoreRestriction>
+        </Webinse_Restriction>
     </modules>
     <global>
         <models>
-
+            <restriction>
+                <class>Webinse_Restriction_Model</class>
+            </restriction>
         </models>
         <helpers>
-
+            <restriction>
+                <class>Webinse_Restriction_Helper</class>
+            </restriction>
         </helpers>
     </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <restriction_options>
+                                            <title>Webinse Rescriction Config Section</title>
+                                        </restriction_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
 </config>

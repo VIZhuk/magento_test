@@ -5,16 +5,29 @@
             <version>0.1.0</version>
         </Webinse_Company>
     </modules>
+    <frontend>
+        <routers>
+            <company>
+                <use>standard</use>
+                <args>
+                    <module>Webinse_Company</module>
+                    <frontName>company</frontName>
+                </args>
+            </company>
+        </routers>
+    </frontend>
     <global>
         <models>
             <company>
+                <class>Webinse_Company_Model</class>
                 <resourceModel>company_resource</resourceModel>
             </company>
             <company_resource>
+                <class>Webinse_Company_Model_Resource</class>
                 <entities>
-                    <table_company>
+                    <entity>
                         <table>webinse_company_entities</table>
-                    </table_company>
+                    </entity>
                 </entities>
             </company_resource>
         </models>
@@ -24,6 +37,16 @@
             </company>
         </helpers>
         <resources>
+            <company_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </company_write>
+            <company_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </company_read>
             <company_setup>
                 <setup>
                     <module>Webinse_Company</module>

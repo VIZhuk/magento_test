@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <editor translate="title" module="tzstores">
+                    <title>WYSIWYG editor form</title>
+                    <action>adminhtml/editor</action>
+                    <sort_order>100</sort_order>
+                </editor>
+            </children>
+        </cms>
+    </menu>
+</config>

@@ -17,6 +17,11 @@
         </routers>
     </frontend>
     <global>
+        <blocks>
+            <company>
+                <class>Webinse_Company_Block</class>
+            </company>
+        </blocks>
         <models>
             <company>
                 <class>Webinse_Company_Model</class>
@@ -69,8 +74,15 @@
         <menu>
             <company module="company">
                 <title>Company</title>
-                <sort_order>77</sort_order>
+                <sort_order>44</sort_order>
                 <action>company_admin/adminhtml_company</action>
+                <children>
+                    <managecompanies>
+                        <title>Manage Companies</title>
+                        <action>company_admin/adminhtml_company</action>
+                        <sort_order>10</sort_order>
+                    </managecompanies>
+                </children>
             </company>
         </menu>
     </adminhtml>

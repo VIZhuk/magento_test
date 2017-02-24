@@ -31,4 +31,14 @@ class Webinse_Company_Adminhtml_CompanyController extends Mage_Adminhtml_Control
         $this->_redirect('*/*');
 
     }
+
+    public function gridAction()
+    {
+        $this->loadLayout();
+        $this->getResponse()->setBody(
+            $this->getLayout()->createBlock('company/adminhtml_company_grid')->toHtml()
+        );
+
+    }
+
 }

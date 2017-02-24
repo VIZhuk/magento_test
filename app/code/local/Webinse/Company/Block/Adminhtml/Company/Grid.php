@@ -64,4 +64,18 @@ class Webinse_Company_Block_Adminhtml_Company_Grid extends Mage_Adminhtml_Block_
         return $this;
 
     }
+
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->setSaveParametersInSession(true);
+        $this->setUseAjax(true);
+        $this->setId('company_id');
+    }
+
+    public function getGridUrl()
+    {
+        return $this->getUrl('*/*/grid', array('_current'=>true));
+    }
 }

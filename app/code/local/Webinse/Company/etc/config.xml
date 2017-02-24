@@ -17,6 +17,11 @@
         </routers>
     </frontend>
     <global>
+        <helpers>
+            <company>
+                <class>Webinse_Company_Helper</class>
+            </company>
+        </helpers>
         <blocks>
             <company>
                 <class>Webinse_Company_Block</class>
@@ -36,11 +41,6 @@
                 </entities>
             </company_resource>
         </models>
-        <helpers>
-            <company>
-                <class>Webinse_Company_Helper</class>
-            </company>
-        </helpers>
         <resources>
             <company_write>
                 <connection>
